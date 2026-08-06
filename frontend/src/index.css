@@ -1,0 +1,922 @@
+/* ============================================
+   MODERN COLOR SYSTEM & THEME VARIABLES
+   ============================================ */
+:root {
+  /* Dark mode base colors - Modern Deep Blue */
+  --bg: #0a0e27;
+  --bg-secondary: #151d3a;
+  --panel: #1a2847;
+  --border: #2d3f5b;
+  
+  /* Accent colors */
+  --blue: #1f6feb;
+  --blue-light: #3fb950;
+  --purple: #8957e5;
+  --green: #238636;
+  
+  /* Text colors */
+  --text: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  
+  /* Interactive */
+  --hover-bg: #262c36;
+  --focus-ring: rgba(31, 111, 235, 0.3);
+  
+  /* Gradients */
+  --gradient-blue: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+  --gradient-purple: linear-gradient(135deg, #8957e5 0%, #a371f7 100%);
+  --gradient-green: linear-gradient(135deg, #238636 0%, #3fb950 100%);
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Inter", "Fira Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   PROFESSIONAL ANIMATED BACKGROUND
+   ============================================ */
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(31, 111, 235, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(137, 87, 229, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(35, 134, 54, 0.03) 0%, transparent 50%);
+  animation: gradientShift 15s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 30%, rgba(31, 111, 235, 0.02) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(137, 87, 229, 0.02) 50%, transparent 70%);
+  animation: gradientMove 20s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(31, 111, 235, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(137, 87, 229, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(35, 134, 54, 0.03) 0%, transparent 50%);
+  }
+  50% {
+    background: 
+      radial-gradient(circle at 60% 40%, rgba(31, 111, 235, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 30% 70%, rgba(137, 87, 229, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 70% 30%, rgba(35, 134, 54, 0.05) 0%, transparent 50%);
+  }
+  100% {
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(31, 111, 235, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(137, 87, 229, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(35, 134, 54, 0.03) 0%, transparent 50%);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 32px;
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 16px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ============================================
+   APP LAYOUT
+   ============================================ */
+.app {
+  min-height: 100vh;
+  padding: 40px 24px;
+  background: var(--bg);
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  animation: fadeInDown 0.6s ease-out backwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  animation: titleReveal 0.8s ease-out 0.1s backwards;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin: 8px 0 0 0;
+  font-size: 15px;
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+  background: rgba(20, 30, 48, 0.5);
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #8957e5 0%, #1f6feb 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(137, 87, 229, 0.3);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: rgba(20, 30, 48, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.username {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  background: rgba(244, 63, 94, 0.1);
+  color: #ff6b7a;
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background: rgba(244, 63, 94, 0.2);
+  border-color: rgba(244, 63, 94, 0.5);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-buttons {
+    flex: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   CARDS & PANELS
+   ============================================ */
+.panel {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 320px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  animation: cardFadeIn 0.6s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.03),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+.card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 3px 12px rgba(31, 111, 235, 0.15), 0 0 20px rgba(31, 111, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.card h3 {
+  margin: 0 0 20px 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+/* ============================================
+   INPUTS & FORM ELEMENTS
+   ============================================ */
+textarea,
+input[type="text"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text);
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  animation: inputFadeIn 0.5s ease-out backwards;
+  position: relative;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+textarea::placeholder,
+input[type="text"]::placeholder {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="file"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: var(--bg-secondary);
+  box-shadow: 0 0 0 3px var(--focus-ring), inset 0 0 10px rgba(31, 111, 235, 0.05);
+}
+
+select {
+  cursor: pointer;
+  padding: 10px 12px;
+}
+
+select option {
+  background: var(--panel);
+  color: var(--text);
+}
+
+@keyframes inputFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  background: var(--gradient-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(31, 111, 235, 0.3);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: buttonShimmer 2s infinite;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(31, 111, 235, 0.4), 0 0 25px rgba(31, 111, 235, 0.2);
+  letter-spacing: 0.5px;
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  filter: blur(0.5px);
+}
+
+@keyframes buttonShimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* ============================================
+   RADIO BUTTONS & CONTROLS
+   ============================================ */
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  animation: labelFadeIn 0.4s ease-out backwards;
+}
+
+.controls label:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.controls label:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.controls label:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.controls label:hover {
+  color: var(--text);
+  background: var(--hover-bg);
+  transform: translateX(4px);
+}
+
+.controls input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
+  position: relative;
+}
+
+.controls input[type="radio"]:hover {
+  border-color: var(--blue);
+  box-shadow: 0 0 8px rgba(31, 111, 235, 0.3);
+  transform: scale(1.1);
+}
+
+.controls input[type="radio"]:checked {
+  border-color: var(--blue);
+  background: var(--blue);
+  box-shadow: 0 0 12px rgba(31, 111, 235, 0.5);
+  animation: radioPulse 0.5s ease-out;
+}
+
+@keyframes labelFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes radioPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(31, 111, 235, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 8px rgba(31, 111, 235, 0);
+  }
+}
+
+/* ============================================
+   INPUT MODE SELECTION STYLING
+   ============================================ */
+/* Text mode - Blue theme */
+.controls label:has(input[type="radio"][value="text"]):checked {
+  color: var(--blue);
+  background: rgba(31, 111, 235, 0.1);
+  border-radius: 6px;
+}
+
+/* Dynamically style textarea for text input */
+.controls input[type="radio"]:checked + textarea,
+.card .controls input[type="radio"]:checked ~ textarea {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.1);
+}
+
+/* Helper styles for mode-specific styling (using nth-child targeting) */
+.controls input[type="radio"]:nth-of-type(1):checked ~ textarea {
+  border-left: 4px solid var(--blue);
+}
+
+.controls input[type="radio"]:nth-of-type(2):checked ~ textarea {
+  border-left: 4px solid var(--purple);
+}
+
+.controls input[type="radio"]:nth-of-type(3):checked ~ textarea {
+  border-left: 4px solid var(--green);
+}
+
+/* ============================================
+   UPLOAD SECTION & FILE INPUT
+   ============================================ */
+.file-upload-container {
+  margin-top: 16px;
+  padding: 20px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s ease;
+  background: rgba(31, 111, 235, 0.03);
+}
+
+.file-upload-container:hover {
+  border-color: var(--green);
+  background: rgba(35, 134, 54, 0.05);
+}
+
+.file-upload-container.active {
+  border-color: var(--green);
+  background: rgba(35, 134, 54, 0.1);
+}
+
+/* ============================================
+   CHAT SECTION
+   ============================================ */
+.chat {
+  margin-top: 32px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  animation: cardFadeIn 0.8s ease-out backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
+  animation: topLineGlow 3s ease-in-out infinite;
+}
+
+@keyframes topLineGlow {
+  0% {
+    opacity: 0;
+    box-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(31, 111, 235, 0.5);
+  }
+  100% {
+    opacity: 0;
+    box-shadow: none;
+  }
+}
+
+.chat h2 {
+  margin-top: 0;
+  animation: slideInLeft 0.6s ease-out 0.1s backwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ask-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.ask-row input {
+  flex: 1;
+  margin-top: 0;
+}
+
+.ask-row button {
+  margin-top: 0;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* ============================================
+   ANSWER BOX
+   ============================================ */
+.answer-box {
+  margin-top: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 100px;
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.answer-box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+  animation: bottomLineGlow 4s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottomLineGlow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(35, 134, 54, 0.4);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.answer-box h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  animation: slideInLeft 0.5s ease-out 0.3s backwards;
+}
+
+.answer-content {
+  min-height: 80px;
+  line-height: 1.6;
+  color: var(--text);
+  animation: textFadeIn 0.8s ease-out 0.4s backwards;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.answer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.language-selector {
+  flex: 1;
+  min-width: 150px;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 13px;
+  max-width: 200px;
+}
+
+/* ============================================
+   COPY BUTTON
+   ============================================ */
+.copy-button {
+  background: var(--bg-secondary);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(31, 111, 235, 0.3);
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.muted {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* ============================================
+   UPLOAD SECTION MODE STYLING
+   ============================================ */
+.upload-section {
+  transition: all 0.3s ease;
+}
+
+/* Text mode - Blue accent */
+.upload-text .controls label:nth-of-type(1) {
+  color: var(--blue);
+  background: rgba(31, 111, 235, 0.1);
+  border-radius: 6px;
+}
+
+.upload-text textarea {
+  border-left: 4px solid var(--blue);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.upload-text textarea:focus {
+  box-shadow: 0 0 0 3px var(--focus-ring), inset 0 0 0 1px var(--blue);
+}
+
+/* URLs mode - Purple accent */
+.upload-urls .controls label:nth-of-type(2) {
+  color: var(--purple);
+  background: rgba(137, 87, 229, 0.1);
+  border-radius: 6px;
+}
+
+.upload-urls textarea {
+  border-left: 4px solid var(--purple);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.upload-urls textarea:focus {
+  box-shadow: 0 0 0 3px rgba(137, 87, 229, 0.3), inset 0 0 0 1px var(--purple);
+}
+
+/* File mode - Green accent */
+.upload-file .controls label:nth-of-type(3) {
+  color: var(--green);
+  background: rgba(35, 134, 54, 0.1);
+  border-radius: 6px;
+}
+
+.upload-file .file-upload-container {
+  border: 2px dashed var(--green);
+  background: rgba(35, 134, 54, 0.05);
+}
+
+.upload-file .file-upload-container:hover {
+  border-color: var(--green);
+  background: rgba(35, 134, 54, 0.12);
+}
+
+/* ============================================
+   FILE INPUT STYLING
+   ============================================ */
+input[type="file"] {
+  cursor: pointer;
+  padding: 24px;
+}
+
+input[type="file"]::file-selector-button {
+  background: var(--gradient-green);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-right: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(35, 134, 54, 0.3);
+}

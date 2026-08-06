@@ -1,0 +1,220 @@
+{
+  "krishna": [
+    {
+      "question": "what is the thing about ",
+      "answer": "The thing about the provided content is that it appears to be a description or credits for an official music video titled \"Powerhouse\" featuring Coolie, Rajinikanth, Anirudh and uploaded on YouTube by Sun Pictures in collaboration with Lokesh. The details also suggest potential options related to copyright concerns, terms of use (possibly specific ones tailored towards the content), privacy policy for users viewing or interacting with it online, as well as a mention that this is done under Googl",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 265,
+      "timestamp": "2025-12-08T14:13:33.776Z"
+    },
+    {
+      "question": "meaning",
+      "answer": "The meaning of your input appears to be a friendly greeting or expression in which you acknowledge someone's presence with 'hi'. It seems like an informal way to attract attention and initiate conversation. However, without additional context it is difficult to understand the exact intention behind this message as there could be various nuances based on tone of voice (if spoken), facial expressions, or surrounding activities at a particular moment in time when interacting with someone else who m",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 3,
+      "timestamp": "2025-12-08T14:15:10.407Z"
+    },
+    {
+      "question": "meaning in in 30 words ",
+      "answer": "\"Hi!\" is a friendly greeting. It's often used to acknowledge someone’in person or over communication channels when initiating conversation and expresses warmth and approachability, aiming for positive social interaction at the moment of recognition.",
+      "model": "phi3:mini",
+      "language": "hi",
+      "contextLength": 3,
+      "timestamp": "2025-12-08T14:15:34.137Z"
+    },
+    {
+      "question": "what is this about ",
+      "answer": "This is about Krishna Sriramoju, a fresher looking for an entry-level role as a Software Engineer. He recently completed his Btech at Marri Laxman Reddy Institute Of Technology And Management and holds impressive academic credentials with high CGPAs in both undergraduate and intermediate levels. In addition to academics, Krishna has gained practical experience through internships where he worked on Python programming (Internpe), Internet of Things (CITD), Edunet's AI project focusing on foundati",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:24:08.917Z"
+    },
+    {
+      "question": "extract the key points about him ",
+      "answer": "Key points about Krishna Sriramoju:\n1. Fresh graduate seeking entry-level Software Engineer position at a company that values personal growth alongside professional contribution using technical skills and creative thinking (Krishna's specific project interests).\n2. Recently graduated with Btech from Marri Laxman Reddy Institute Of Technology And Management, boasting high CGPAs in both undergraduate and intermediate levels academically. \n3. Acquired practical experience through internships workin",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1312,
+      "timestamp": "2025-12-08T14:25:14.528Z"
+    },
+    {
+      "question": "about the text in few words less than 10",
+      "answer": "Personal greeting.",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 2,
+      "timestamp": "2025-12-08T14:28:50.093Z"
+    },
+    {
+      "question": "example ",
+      "answer": "In the provided context where only the word \"hi\" is given without additional information or a clear indication of what specific example-related query you're asking about, it isn't possible to generate an appropriate response directly related to examples. To provide such answers as requested, more details regarding the topic at hand are necessary—such as whether we need examples for greeting etiquette in different cultures or various methods of saying \"hi\" informally and formally across languages",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 2,
+      "timestamp": "2025-12-08T14:29:14.016Z"
+    },
+    {
+      "question": "explain about the file ",
+      "answer": "The file that appears to be associated with Krishna Sriramoju is likely a resume or CV (Curriculum Vitae). The content provided indicates his objective, education background including CGPA and subjects passed along with internships he has done during the last few years. He also mentions projects undertaken in areas like IoT devices security using ML techniques as well as an online issuance system for caste certificates developed under a real-time monitoring dashboard that tracks application stat",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:32:36.421Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Krishna Sriramoju - Software Engineer with Btech; proficient Java, Python, HTML/CSS. Gained IoT and ML skills via internships (Python programming, Internet of Things). Completed projects on spam detection in IoT using AI, digital certificate issuance system for Revenue Dept., caste & income certs monitoring dashboard developed too; holds Foundations Of AI Certification from Edunet.",
+      "model": "phi3:mini",
+      "language": "te",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:34:54.287Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Krishna Sriramoju - Software Engineer Candidate with Btech MLAIT, Marri Laxman Reddy Institute of Technology and Management. Proficient in Java, Python, HTML/CSS; MySQL database experience. Specializes in AI foundations, IoT security projects including spam detection for devices using machine learning techniques. Possesses certifications from Edunet as well as Infosys SpringBoard programming courses.",
+      "model": "phi3:mini",
+      "language": "te",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:35:31.608Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Krishna Sriramoju - Passionate fresher with software engineering objective for learning and growth. High Btech CGPA, relevant internships, projects on spam detection & certificate issuance system development showcasing skills in Java, Python, HTML, CSS, MySQL databases, Git tooling, AI foundations certification.",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:35:48.520Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Software Engineer with strong technical skills and creative thinking for a fresh entry-level role. Seeking company promoting personal growth while contributing to development. Bachelor's degree holder, excellent academic record (8.13 CGPA), relevant internships including Python programming at Edunet in AI foundations project on spam detection using Machine Learning with IoT devices and online issuance for caste certificates monitoring dashboard implementation experience proficient in Java/Python",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:38:29.449Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Krishna Sriramoju - Java, Python; HTML, CSS skilled. Passed Foundations of AI certification. Experienced with IoT and caste certificate issuance systems. Proficient in Git & GitHub usage. Interested in entry-level Software Engineer role for personal growth using technical skills.",
+      "model": "phi3:mini",
+      "language": "te",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:38:51.618Z"
+    },
+    {
+      "question": "10 words about him ",
+      "answer": "Krishna Sriramoju - Software Engineer aspirant seeking entry-level role, tech enthusiast contributing to company growth and personal development.",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1874,
+      "timestamp": "2025-12-08T14:39:02.886Z"
+    },
+    {
+      "question": "explain about the file",
+      "answer": "The file appears to be a resume or CV of an individual named Krishna Sriramoju, who is currently seeking entry-level software engineer positions. The content highlights his educational background and skills he possesses that are relevant in the field such as technical know-how, creative thinking, communication skills, and analytical abilities which were developed during his time at Marri Laxman Reddy Institute of Technology & Management where he achieved a CGPA (Cumulative Grade Point Average) o",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1897,
+      "timestamp": "2025-12-08T15:06:44.905Z"
+    },
+    {
+      "question": "about the file in 30 words ",
+      "answer": "Krishna Sriramoju's file showcases a software engineering graduate seeking an entry-level role. They possess strong technical skills, including Python programming and IoT knowledge. Krishna developed spam detection for IoT using ML to improve security and implemented a real-time monitoring system for certificates issuance under the Revenue Department. Highly skilled in various languages and certified in AI Foundations by Edunet, they aim at contributing significantly while fostering personal gro",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1897,
+      "timestamp": "2025-12-08T15:06:54.779Z"
+    },
+    {
+      "question": "explain about the file ",
+      "answer": "The file \"An Efficient Spam Detection Technique for IoT Devices using Machine Learning\" is a GitHub repository created by Krishna Sriramoju (krishnasriramojukittu@gmail.com). As an entry-level software engineer, Krishna seeks to contribute and grow in both professional and personal aspects within the company that provides this opportunity.\n\nIn terms of education, Krishna holds a Btech degree from Marri Laxman Reddy Institute Of Technology And Management with a CGPA of 7.9 out of 10. He has also ",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1921,
+      "timestamp": "2025-12-12T05:26:57.538Z"
+    },
+    {
+      "question": "extract the key points frim the file ",
+      "answer": "Key Points from the File:\n\nPersonal Information:\n- Name: Krishna Sriramoju\n- Email: krishnasriramojukittu@gmail.com\n- Phone Number: +916300760595, extented as linkedin and github profiles (krishnasriramojukittu on LinkedIn; Krishnasriramoju's GitHub)\n- Education from Sri Chaitanya College in Karimnagar - 92 percentile score with a CGPA of 10.0, Btech degree completed at MLRITM Hyderabad and graduated this year (Based on the LinkedIn profile). The candidate also mentions an internship experience ",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 1921,
+      "timestamp": "2025-12-12T05:27:57.073Z"
+    },
+    {
+      "question": "what is the news article about ",
+      "answer": "The news article from \"The Hindu\" dated December 12, 2dekam 2025 discusses the DGCA's decision to dismiss four flight operations inspectors in connection with significant IndiGo flight disruptions that occurred on December 3-5. Additionally, Pieter Elbers, CEO of IndiGo, has been summoned for questioning regarding restoration efforts and compensation measures taken for affected passengers during this crisis.",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 7251,
+      "timestamp": "2025-12-12T05:29:32.393Z"
+    },
+    {
+      "question": "what is the news article about ",
+      "answer": "The article is about the DGCA sacking four flight operations inspectors in connection with IndiGo flight disruptions. The DGCA has also summoned IndiGo CEO Pieter Elbers to grill him on efforts to restore flights, hire more pilots, as well as issue refunds and compensation to all affected passengers.",
+      "model": "gemma:2b",
+      "language": "en",
+      "contextLength": 7251,
+      "timestamp": "2025-12-12T05:30:03.566Z"
+    },
+    {
+      "question": "what is the news article about ",
+      "answer": "Based on the content provided from \"The Hindu\" newspaper, the news article is about the DGCA (Directorate General of Civil Aviation) taking action against four flight operations inspectors in connection with IndiGo flight disruptions. The airline has offered travel vouchers worth ₹10,000 to passengers severely impacted during December 3-5. The immediate reason for the decision was not known; however, several questions are being asked of DGCA regarding their assessment of IndiGo's pilot requireme",
+      "model": "yi:6b",
+      "language": "en",
+      "contextLength": 7251,
+      "timestamp": "2025-12-12T05:30:49.835Z"
+    },
+    {
+      "question": "what is the details about ",
+      "answer": "The details about \"Mohammed Zameer Hussain\" are as follows:\n\n- Enrolment No.: 2081/11349/00899\n- To: Not mentioned in the content\n- C/O: Mohammed Zakir Hussain\n- Address: 1-5-72, gowliguda, VTC: Banswada, PO: Banswada, Sub District: Banswada, District: Kamareddy, State: Telangana, PIN Code: 503187\n- Mobile: 9959459893 / 2570 4470 9465\n- VID: 9187 0027 1337 5711\n- Date of Birth (DOB): 26/06/2004\n- Gender: MALE\n- Aadhaar no. issued: 10/07/2013\n- Details as on: 10/07/2024",
+      "model": "yi:6b",
+      "language": "en",
+      "contextLength": 704,
+      "timestamp": "2025-12-12T05:33:29.388Z"
+    },
+    {
+      "question": "what is the name in the pdf",
+      "answer": "The name in the PDF is \"Mohammed Zameer Hussain.\"",
+      "model": "phi3:mini",
+      "language": "en",
+      "contextLength": 704,
+      "timestamp": "2025-12-12T06:25:38.521Z"
+    },
+    {
+      "question": "what is the project title ",
+      "answer": "The project title is \"InsightForge Ai – Powered Knowledge Extraction Platform\".",
+      "model": "gemma:2b",
+      "language": "en",
+      "contextLength": 11617,
+      "timestamp": "2025-12-23T09:15:48.088Z"
+    },
+    {
+      "question": "what is the project title ",
+      "answer": "The project title is \"InsightForge Ai – Powered Knowledge Extraction Platform\".",
+      "model": "gemma:2b",
+      "language": "en",
+      "contextLength": 11617,
+      "timestamp": "2025-12-23T09:16:27.978Z"
+    },
+    {
+      "question": "explain about the project ",
+      "answer": "**The provided context does not include any information about the results of the project, therefore I cannot generate the requested information from the context.**",
+      "model": "gemma:2b",
+      "language": "en",
+      "contextLength": 11617,
+      "timestamp": "2025-12-23T09:19:21.909Z"
+    },
+    {
+      "question": "cut unnecessary words",
+      "answer": "The content has been reduced by removing unnecessary words such as \"This is to certify\", \"work done by\", \"DR.\", \"This project is submitted in partial fulfilment of the requirements for the award of the Bachelor of Technology Degree to be awarded by Jawaharlal Nehru Technological University Hyderabad, Hyderabad\", and \"The project is submitted in partial fulfilment of the requirements\".\n\nThe resulting content is:\n\nINSIGHTFORGE AI – POWERED KNOWLEDGE EXTRACTION PLATFORM work done by S. KRISHNA (227",
+      "model": "gemma:2b",
+      "language": "en",
+      "contextLength": 614,
+      "timestamp": "2025-12-23T10:11:31.214Z"
+    }
+  ]
+}

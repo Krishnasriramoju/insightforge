@@ -1,0 +1,132 @@
+/* ============================================
+   MODEL SELECTOR SPECIFIC STYLES
+   ============================================ */
+
+.model-selector h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.model-selector select {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.model-selector select:hover {
+  border-color: var(--blue);
+  background: var(--hover-bg);
+}
+
+.model-selector select:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.3);
+}
+
+.model-selector select option {
+  background: var(--panel);
+  color: var(--text);
+  padding: 8px;
+}
+
+.model-selector .muted {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.model-selector .muted::before {
+  content: '';
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* ============================================
+   MODE-SPECIFIC BACKGROUND COLORS
+   ============================================ */
+
+/* Text Mode - Blue Theme */
+.model-selector.model-text {
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.15) 0%, rgba(31, 111, 235, 0.08) 100%) !important;
+  border: 2px solid rgba(31, 111, 235, 0.3) !important;
+}
+
+.model-selector.model-text h3 {
+  color: #1f6feb;
+}
+
+.model-selector.model-text select {
+  background: rgba(31, 111, 235, 0.1);
+  border: 2px solid rgba(31, 111, 235, 0.3);
+  color: var(--text);
+}
+
+.model-selector.model-text select:hover {
+  border-color: #1f6feb;
+  background: rgba(31, 111, 235, 0.12);
+}
+
+.model-selector.model-text select:focus {
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.2);
+}
+
+/* URLs Mode - Green Theme */
+.model-selector.model-urls {
+  background: linear-gradient(135deg, rgba(35, 134, 54, 0.15) 0%, rgba(35, 134, 54, 0.08) 100%) !important;
+  border: 2px solid rgba(35, 134, 54, 0.3) !important;
+}
+
+.model-selector.model-urls h3 {
+  color: #238636;
+}
+
+.model-selector.model-urls select {
+  background: rgba(35, 134, 54, 0.1);
+  border: 2px solid rgba(35, 134, 54, 0.3);
+  color: var(--text);
+}
+
+.model-selector.model-urls select:hover {
+  border-color: #238636;
+  background: rgba(35, 134, 54, 0.12);
+}
+
+.model-selector.model-urls select:focus {
+  border-color: #238636;
+  box-shadow: 0 0 0 3px rgba(35, 134, 54, 0.2);
+}
+
+/* PDF/TXT Mode - Purple Theme */
+.model-selector.model-file {
+  background: linear-gradient(135deg, rgba(137, 87, 229, 0.15) 0%, rgba(137, 87, 229, 0.08) 100%) !important;
+  border: 2px solid rgba(137, 87, 229, 0.3) !important;
+}
+
+.model-selector.model-file h3 {
+  color: #8957e5;
+}
+
+.model-selector.model-file select {
+  background: rgba(137, 87, 229, 0.1);
+  border: 2px solid rgba(137, 87, 229, 0.3);
+  color: var(--text);
+}
+
+.model-selector.model-file select:hover {
+  border-color: #8957e5;
+  background: rgba(137, 87, 229, 0.12);
+}
+
+.model-selector.model-file select:focus {
+  border-color: #8957e5;
+  box-shadow: 0 0 0 3px rgba(137, 87, 229, 0.2);
+}
