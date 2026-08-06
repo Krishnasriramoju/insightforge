@@ -11,6 +11,16 @@ InsightForge AI is a full-stack knowledge extraction platform that helps users u
 - Store user login and chat history locally
 - Switch between different Ollama models
 
+## Screenshots
+
+The app UI is shown below. Save your screenshot images in `docs/screenshots/` and use the same filenames to display them here.
+
+![Login Screen](docs/screenshots/login-screen.png)
+
+![Search & Upload Screen](docs/screenshots/search-screen.png)
+
+![History Screen](docs/screenshots/history-screen.png)
+
 ## Tech Stack
 
 - Frontend: React + Vite
